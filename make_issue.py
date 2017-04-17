@@ -33,8 +33,8 @@ def usage():
     print '%s -f JSON_file_name -l label' % sys.argv[0]
 
 def authorize():
-    client_id = '896045b6a6f318e694cb'
-    client_secret = '7eaa8b9ae31117a8ef7f12780871277a962373f4'
+    client_id = [Enter client id]
+    client_secret = [Enter client secret]
 
 
     authorization_base_url = 'https://github.ibm.com/login/oauth/authorize'
