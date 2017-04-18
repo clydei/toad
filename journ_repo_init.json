@@ -1,15 +1,15 @@
 {
 
-  "org": "cdicuspi",
-  "repo": "acme_freight_journo",
-  "token": "enter token here",
-  "username": "cdicuspi",
-  "apiurl": "https://github.ibm.com/api/v3/repos",
+  "org": "clydei",
+  "repo": "toad",
+  "token": "Enter token here",
+  "username": "clydei",
+  "apiurl": "https://api.github.com/repos",
 "issues":  [
   {"title":"get journey from OMs",
     "labels":["journey1"],
     "state":"open",
-    "assignees":["cdicuspi"],
+    "assignees":["clydei"],
     "milestone":null,
     "comments":0,
     "body_html":"<p>get journey from OMs</p>",
@@ -19,7 +19,7 @@
   {"title":"work with dev teams to get components",
       "labels":["journey1"],
       "state":"open",
-      "assignees":["cdicuspi"],
+      "assignees":["clydei"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>work with dev teams to get components</p>",
@@ -29,7 +29,7 @@
   {"title":"validate components",
     "labels":["journey1"],
     "state":"open",
-    "assignees":["cdicuspi"],
+    "assignees":["clydei"],
     "milestone":null,
     "comments":0,
     "body_html":"<p>validate components</p>",
@@ -59,7 +59,7 @@
   {"title":"design graphics",
     "labels":["journey1"],
     "state":"open",
-    "assignees":[],
+    "assignees":["silveyra"],
     "milestone":null,
     "comments":0,
     "body_html":"<p>design graphics</p>",
@@ -69,7 +69,7 @@
     {"title":"build journey page",
       "labels":["journey1"],
       "state":"open",
-      "assignees":[],
+      "assignees":["neilmack"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>build journey page</p>",
@@ -89,7 +89,7 @@
     {"title":"verify with stakeholders",
       "labels":["journey1"],
       "state":"open",
-      "assignees":["cdicuspi"],
+      "assignees":["clydei"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>verify with stakeholders</p>",
@@ -99,7 +99,7 @@
     {"title":"publish to web",
       "labels":["journey1"],
       "state":"open",
-      "assignees":[],
+      "assignees":["neilmack"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>publish to web</p>",
@@ -109,12 +109,39 @@
     {"title":"launch tech talk process",
       "labels":["journey1"],
       "state":"open",
-      "assignees":["cdicuspi"],
+      "assignees":["clydei"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>launch tech talk process</p>",
       "body_text":"launch tech talk process",
       "body":"launch tech talk process"
     }
-  ]
+
+  ],
+  "milestones": [
+    {
+      "title": "Drafted",
+      "state": "open",
+      "description": "Web content drafted"
+    },
+    {
+      "title": "Validated",
+      "state": "open",
+      "description": "Web content validated"
+    },
+    {
+      "title": "Published",
+      "state": "open",
+      "description": "Web content published"
+    }
+  ],
+  "collabo": [
+    { "username" : "silveyra",
+      "permission" : "push"
+    },
+    { "username" : "neilmack",
+      "permission" : "push"
+    }
+  ],
+  "labels":[]
 }
