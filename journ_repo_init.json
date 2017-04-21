@@ -1,15 +1,24 @@
 {
 
-  "org": "clydei",
-  "repo": "toad",
+  "org": "cdicuspi",
+  "repo": "test_journo1",
   "token": "Enter token here",
-  "username": "clydei",
-  "apiurl": "https://api.github.com/repos",
+  "username": "cdicuspi",
+  "apiurl": "https://github.ibm.com/api/v3",
+  "new_repo": {
+    "name": "test_journo1",
+    "description": "This is a journey repository",
+    "homepage": "https://github.ibm.com",
+    "private": false,
+    "has_issues": true,
+    "has_projects": true,
+    "has_wiki": false
+  },
 "issues":  [
   {"title":"get journey from OMs",
-    "labels":["journey1"],
+    "labels":["EM", "OM"],
     "state":"open",
-    "assignees":["clydei"],
+    "assignees":["cdicuspi"],
     "milestone":null,
     "comments":0,
     "body_html":"<p>get journey from OMs</p>",
@@ -17,9 +26,9 @@
     "body":"get journey from OMs"
   },
   {"title":"work with dev teams to get components",
-      "labels":["journey1"],
+      "labels":["EM", "Developer"],
       "state":"open",
-      "assignees":["clydei"],
+      "assignees":["cdicuspi"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>work with dev teams to get components</p>",
@@ -27,9 +36,9 @@
       "body":"work with dev teams to get components"
   },
   {"title":"validate components",
-    "labels":["journey1"],
+    "labels":["EM", "Developer"],
     "state":"open",
-    "assignees":["clydei"],
+    "assignees":["cdicuspi"],
     "milestone":null,
     "comments":0,
     "body_html":"<p>validate components</p>",
@@ -37,7 +46,7 @@
     "body":"validate components"
   },
   {"title":"edit components",
-    "labels":["journey1"],
+    "labels":["Editor"],
     "state":"open",
     "assignees":[],
     "milestone":null,
@@ -47,7 +56,7 @@
     "body":"edit components"
   },
   {"title":"build architecture",
-    "labels":["journey1"],
+    "labels":["Graphics Artist"],
     "state":"open",
     "assignees":[],
     "milestone":null,
@@ -57,7 +66,7 @@
     "body":"build architecture"
   },
   {"title":"design graphics",
-    "labels":["journey1"],
+    "labels":["Graphics Artist"],
     "state":"open",
     "assignees":["silveyra"],
     "milestone":null,
@@ -67,7 +76,7 @@
     "body":"design graphics"
     },
     {"title":"build journey page",
-      "labels":["journey1"],
+      "labels":["Editor"],
       "state":"open",
       "assignees":["neilmack"],
       "milestone":null,
@@ -77,7 +86,7 @@
       "body":"build journey page"
     },
     {"title":"build journey intro blog",
-      "labels":["journey1"],
+      "labels":["Editor"],
       "state":"open",
       "assignees":[],
       "milestone":null,
@@ -87,9 +96,9 @@
       "body":"build journey intro blog"
     },
     {"title":"verify with stakeholders",
-      "labels":["journey1"],
+      "labels":["EM", "OM"],
       "state":"open",
-      "assignees":["clydei"],
+      "assignees":["cdicuspi"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>verify with stakeholders</p>",
@@ -97,7 +106,7 @@
       "body":"verify with stakeholders"
     },
     {"title":"publish to web",
-      "labels":["journey1"],
+      "labels":["Editor"],
       "state":"open",
       "assignees":["neilmack"],
       "milestone":null,
@@ -107,9 +116,9 @@
       "body":"publish to web"
     },
     {"title":"launch tech talk process",
-      "labels":["journey1"],
+      "labels":["EM", "OM"],
       "state":"open",
-      "assignees":["clydei"],
+      "assignees":["cdicuspi"],
       "milestone":null,
       "comments":0,
       "body_html":"<p>launch tech talk process</p>",
@@ -143,5 +152,26 @@
       "permission" : "push"
     }
   ],
-  "labels":[]
+  "labels":[
+    {
+      "name" : "Developer",
+      "color" : "c5def5"
+    },
+    {
+      "name" : "Editor",
+      "color" : "d4c5f9"
+    },
+    {
+      "name" : "EM",
+      "color" : "0052cc"
+    },
+    {
+      "name" : "OM",
+      "color" : "006b75"
+    },
+    {
+      "name" : "Graphics Artist",
+      "color": "fef2c0"
+    }
+  ]
 }
