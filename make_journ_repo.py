@@ -78,16 +78,23 @@ def make_new_repo(session, url, repo ):
         sys.exit()
 
 def usage():
-    print '%s -f JSON_file_name -r ' % sys.argv[0]
+    print '%s -f JSON_file_name -j JOURNEY_NAME [ali]' % sys.argv[0]
     print '-f file name of initializer JSON file'
     print '-r create a new repository called new_repo in the init file'
+    print '-a create everything'
+    print '-l just create the label'
+    print '-i just create the issue'
 
 
 def main(argv):
     DATAFILE = 'c:\A1OpenTech\issue.json' #Default value. Read from JSON file
     NEW_REPO = False
+    DO_ALL = True
+    DO_LABEL = False
+    DO_ISSUE = False
+
     try:
-        opts, args = getopt.getopt(argv, "hf:r", ["help", "file=", "--repo"])
+        opts, args = getopt.getopt(argv, "hf:j:ail", ["help", "file=", "journey=", "all", "issues", "labels"])
     except getopt.GetoptError:
         usage()
         sys.exit(2)
@@ -97,8 +104,16 @@ def main(argv):
             sys.exit()
         elif opt in ("-f", "--file"):
             DATAFILE = arg
-        elif opt in ("-r", "--repo"):
-            NEW_REPO = True
+        elif opt in ("-j", "--journey"):
+            JOURN_LABEL = arg
+        elif opt in ("-a", "--all"):
+            DO_ALL = True
+        elif opt in ("-l", "--labels"):
+            DO_LABEL = True
+            DO_ALL = False
+        elif opt in ("-i", "--issues"):
+            DO_ISSUE = True
+            DO_ALL = False
 
     with open(DATAFILE) as data_file:
         data = json.load(data_file)
@@ -131,18 +146,24 @@ def main(argv):
 
     if NEW_REPO == True:
         make_new_repo(session, repo_url, data['new_repo'])
+    #if DO_ALL:
+    #for user in data["collabo"]:
+     # add_collabo(session, collabo_url, user['username'], user['permission'])
 
-    for user in data["collabo"]:
-      add_collabo(session, collabo_url, user['username'], user['permission'])
+    if DO_ALL:
+        for milestone in data["milestones"]:
+          make_milestone(session, milestone_url, milestone)
 
-    for milestone in data["milestones"]:
-      make_milestone(session, milestone_url, milestone)
+    if DO_ALL | DO_LABEL:
+        for label in data["labels"]:
+            make_label(session, label_url, label)
 
-    for label in data["labels"]:
-        make_label(session, label_url, label)
-
-    for issue in data['issues']:
-        make_github_issue(session, url, issue['title'], issue['body'], issue['assignees'], issue['milestone'], issue['labels'])
+    if DO_ALL | DO_ISSUE:
+        for issue in data['issues']:
+            issue_label = []
+            issue_label = issue['labels']
+            issue_label.append(JOURN_LABEL)
+            make_github_issue(session, url, issue['title'], issue['body'], issue['assignees'], issue['milestone'], issue_label)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
