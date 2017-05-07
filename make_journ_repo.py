@@ -84,6 +84,7 @@ def usage():
     print '-a create everything'
     print '-l just create the label'
     print '-i just create the issue'
+    print '-j journey name'
 
 
 def main(argv):
