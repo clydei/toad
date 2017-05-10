@@ -81,7 +81,7 @@ def make_new_repo(session, url, repo ):
 def usage():
     print '%s -f JSON_file_name -j JOURNEY_NAME [ali]' % sys.argv[0]
     print '-f file name of initializer JSON file - required'
-    print '-r new_repo_name - create new repo using new_repo_name - optional'
+    print '-r repo to populate - required'
     print '-a create everything - optional'
     print '-l just create the label - optional'
     print '-i just create the issue - optional'
