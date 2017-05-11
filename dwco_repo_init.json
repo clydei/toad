@@ -3,7 +3,7 @@
   "org": "IBMCode",
   "repo": "test_journo1",
   "token": "Enter token here",
-  "username": "Your Github username",
+  "username": "Enter github username here",
   "apiurl": "https://github.ibm.com/api/v3",
   "new_repo": {
     "name": "test_journo2",
@@ -15,37 +15,37 @@
     "has_wiki": false
   },
 "issues":  [
-  {"title":"get journey from OMs",
-    "labels":["EM", "OM"],
+  {"title":"Gather project information",
+    "labels":["EM", "PL"],
     "state":"open",
     "assignees":[],
     "milestone":null,
     "comments":0,
-    "body_html":"<p>get journey from OMs</p>",
-    "body_text":"get journey from OMs",
-    "body":"get journey from OMs"
+    "body_html":"<p>get project information from PL</p>",
+    "body_text":"get project information from PL",
+    "body":"get project information from PL"
   },
-  {"title":"work with dev teams to get components",
-      "labels":["EM", "Developer"],
+  {"title":"Evaluate project",
+      "labels":["EM", "PL"],
       "state":"open",
       "assignees":[],
       "milestone":null,
       "comments":0,
-      "body_html":"<p>work with dev teams to get components</p>",
-      "body_text":"work with dev teams to get components",
-      "body":"work with dev teams to get components"
+      "body_html":"<p>Evaluate project with selection criteria</p>",
+      "body_text":"Evaluate project with selection criteria",
+      "body":"Evaluate project with selection criteria"
   },
-  {"title":"validate components",
-    "labels":["EM", "Developer"],
+  {"title":"Collect content",
+    "labels":["EM", "PL"],
     "state":"open",
     "assignees":[],
     "milestone":null,
     "comments":0,
-    "body_html":"<p>validate components</p>",
-    "body_text":"validate components",
-    "body":"validate components"
+    "body_html":"<p>Collect project content</p>",
+    "body_text":"Collect project content",
+    "body":"Collect project content"
   },
-  {"title":"create first draft",
+  {"title":"Create first draft",
     "labels":["Editor"],
     "state":"open",
     "assignees":[],
@@ -55,7 +55,7 @@
     "body_text":"edit components",
     "body":"edit components"
   },
-  {"title":"create review draft",
+  {"title":"Create review draft",
     "labels":["Editor"],
     "state":"open",
     "assignees":[],
@@ -65,7 +65,7 @@
     "body_text":"edit components",
     "body":"edit components"
   },
-  {"title":"create approval draft",
+  {"title":"Create approval draft",
     "labels":["Editor"],
     "state":"open",
     "assignees":[],
@@ -75,17 +75,8 @@
     "body_text":"edit components",
     "body":"edit components"
   },
-  {"title":"build architecture",
-    "labels":["Graphics Artist"],
-    "state":"open",
-    "assignees":[],
-    "milestone":null,
-    "comments":0,
-    "body_html":"<p>build architecture</p>",
-    "body_text":"build architecture",
-    "body":"build architecture"
-  },
-  {"title":"design graphics",
+
+  {"title":"Design graphics",
     "labels":["Graphics Artist"],
     "state":"open",
     "assignees":[],
@@ -95,28 +86,8 @@
     "body_text":"design graphics",
     "body":"design graphics"
     },
-    {"title":"build journey page",
-      "labels":["Editor"],
-      "state":"open",
-      "assignees":[""],
-      "milestone":null,
-      "comments":0,
-      "body_html":"<p>build journey page</p>",
-      "body_text":"build journey page",
-      "body":"build journey page"
-    },
-    {"title":"build journey intro blog",
-      "labels":["Editor"],
-      "state":"open",
-      "assignees":[],
-      "milestone":null,
-      "comments":0,
-      "body_html":"<p>build journey intro blog</p>",
-      "body_text":"build journey intro blog",
-      "body":"build journey intro blog"
-    },
-    {"title":"verify with stakeholders",
-      "labels":["EM", "OM"],
+    {"title":"Verify with stakeholders",
+      "labels":["EM", "PL"],
       "state":"open",
       "assignees":[],
       "milestone":null,
@@ -125,7 +96,7 @@
       "body_text":"verify with stakeholders",
       "body":"verify with stakeholders"
     },
-    {"title":"publish to web",
+    {"title":"Publish to web",
       "labels":["Editor"],
       "state":"open",
       "assignees":[],
@@ -135,17 +106,7 @@
       "body_text":"publish to web",
       "body":"publish to web"
     },
-    {"title":"update accelerate page",
-      "labels":["Editor"],
-      "state":"open",
-      "assignees":[],
-      "milestone":null,
-      "comments":0,
-      "body_html":"<p>update accelerate page</p>",
-      "body_text":"update accelerate page",
-      "body":"update accelerate page"
-    },
-    {"title":"create social post and tiles",
+    {"title":"Create social post and tiles",
       "labels":["Editor"],
       "state":"open",
       "assignees":[],
@@ -155,8 +116,8 @@
       "body_text":"create social post and tiles",
       "body":"create social post and tiles"
     },
-    {"title":"promote through social media",
-      "labels":["EM", "OM"],
+    {"title":"Promote through social media",
+      "labels":["EM", "PL"],
       "state":"open",
       "assignees":[],
       "milestone":null,
@@ -165,8 +126,8 @@
       "body_text":"promote through social media",
       "body":"promote through social media"
     },
-    {"title":"launch tech talk process",
-      "labels":["EM", "OM"],
+    {"title":"Launch tech talk process",
+      "labels":["EM", "PL"],
       "state":"open",
       "assignees":[],
       "milestone":null,
@@ -206,8 +167,8 @@
       "permission": "admin"
     },
     {
-      "username" : "kimjina",
-      "permission": "push"
+      "username" : "emitche",
+      "permission" : "push"
     }
   ],
   "labels":[
@@ -224,7 +185,7 @@
       "color" : "0052cc"
     },
     {
-      "name" : "OM",
+      "name" : "PL",
       "color" : "006b75"
     },
     {
