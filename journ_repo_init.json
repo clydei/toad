@@ -95,16 +95,7 @@
     "body_text":"design graphics",
     "body":"design graphics"
     },
-    {"title":"build journey page",
-      "labels":["Editor"],
-      "state":"open",
-      "assignees":[""],
-      "milestone":null,
-      "comments":0,
-      "body_html":"<p>build journey page</p>",
-      "body_text":"build journey page",
-      "body":"build journey page"
-    },
+
     {"title":"build journey intro blog",
       "labels":["Editor"],
       "state":"open",
@@ -125,6 +116,16 @@
       "body_text":"verify with stakeholders",
       "body":"verify with stakeholders"
     },
+    {"title":"Add coremetrics coded links",
+      "labels":["EM", "OM"],
+      "state":"open",
+      "assignees":[],
+      "milestone":null,
+      "comments":0,
+      "body_html":"<p>Add coremetrics coded links</p>",
+      "body_text":"Add coremetrics coded links",
+      "body":"Add coremetrics coded links"
+    },
     {"title":"publish to web",
       "labels":["Editor"],
       "state":"open",
@@ -144,6 +145,16 @@
       "body_html":"<p>update accelerate page</p>",
       "body_text":"update accelerate page",
       "body":"update accelerate page"
+    },
+    {"title":"Create card on Journeys page",
+      "labels":["Editor"],
+      "state":"open",
+      "assignees":[""],
+      "milestone":null,
+      "comments":0,
+      "body_html":"<p>Create card on Journeys page</p>",
+      "body_text":"Create card on Journeys page",
+      "body":"Create card on Journeys page"
     },
     {"title":"create social post and tiles",
       "labels":["Editor"],
